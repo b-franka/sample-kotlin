@@ -9,7 +9,7 @@ plugins {
 	id("org.openapi.generator") version "5.3.0"
 }
 
-group = "com.swapp"
+group = "com.kanka"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
