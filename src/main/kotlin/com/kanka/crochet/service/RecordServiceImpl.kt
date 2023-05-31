@@ -1,7 +1,7 @@
-package com.swapp.swapplication.service
+package com.kanka.crochet.service
 
 import org.springframework.stereotype.Service
-import com.swapp.swapplication.model.Record
+import com.kanka.crochet.model.Record
 import mu.KotlinLogging
 
 

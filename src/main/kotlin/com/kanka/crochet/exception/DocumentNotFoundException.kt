@@ -1,4 +1,4 @@
-package com.swapp.swapplication.exception
+package com.kanka.crochet.exception
 
 class DocumentNotFoundException(message: String): RuntimeException(message) {
 }

@@ -1,11 +1,11 @@
-package com.swapp.swapplication
+package com.kanka.crochet
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class Swapplication
+class CrochetApplication
 
 fun main(args: Array<String>) {
-	runApplication<Swapplication>(*args)
+	runApplication<CrochetApplication>(*args)
 }

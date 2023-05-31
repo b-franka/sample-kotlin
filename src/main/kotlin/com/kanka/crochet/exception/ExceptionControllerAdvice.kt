@@ -1,7 +1,7 @@
-package com.swapp.swapplication.exception
+package com.kanka.crochet.exception
 
-import com.swapp.swapplication.api.NotFoundException
-import com.swapp.swapplication.model.ApiError
+import com.kanka.crochet.api.NotFoundException
+import com.kanka.crochet.model.ApiError
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.http.converter.HttpMessageNotReadableException

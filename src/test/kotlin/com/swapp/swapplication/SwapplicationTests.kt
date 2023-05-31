@@ -1,4 +1,4 @@
-package com.swapp.swapplication
+package com.kanka.crochet
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

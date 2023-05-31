@@ -1,7 +1,7 @@
-package com.swapp.swapplication.api
+package com.kanka.crochet.api
 
-import com.swapp.swapplication.model.Record
-import com.swapp.swapplication.service.InvoiceService
+import com.kanka.crochet.model.Record
+import com.kanka.crochet.service.InvoiceService
 import org.springframework.core.io.Resource
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.RestController

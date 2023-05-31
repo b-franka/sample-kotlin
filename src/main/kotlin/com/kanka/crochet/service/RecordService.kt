@@ -1,6 +1,6 @@
-package com.swapp.swapplication.service
+package com.kanka.crochet.service
 
-import com.swapp.swapplication.model.Record
+import com.kanka.crochet.model.Record
 
 interface RecordService {
     fun getAll(): List<Record>

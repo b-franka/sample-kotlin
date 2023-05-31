@@ -29,7 +29,7 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
-val oasPackage = "com.swapp.swapplication"
+val oasPackage = "com.kanka.crochet"
 val oasSpecLocation = "src/main/resources/api-spec.yaml"
 val oasGenOutputDir = project.layout.buildDirectory.dir("generated-oas")
 
