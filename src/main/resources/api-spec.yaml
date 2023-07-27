@@ -5,87 +5,26 @@ info:
 servers:
   - url: http://localhost:8080
 paths:
-  /api/invoice/{documentName}:
+  /api/hello/{name}:
     get:
-      description: Download generated invoice document by document name
-      operationId: getGeneratedInvoice
+      description: Sample endpoint
+      operationId: sayHello
       tags:
-        - invoice
+        - hello
       parameters:
-        - name: documentName
+        - name: name
           in: path
           required: true
-          description: The generated document name as a path variable
+          description: The name
           schema:
             type: string
       responses:
         '200':
           description: An expected response
           content:
-            application/pdf:
-              schema:
-                type: string
-                format: binary
-        '404':
-          description: Document not found
-          content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ApiError"
-        default:
-          description: An unexpected error
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/ApiError"
-  /api/invoice:
-    post:
-      description: Generate invoice document
-      operationId: generateInvoice
-      tags:
-        - invoice
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: array
-              items:
-                $ref: "#/components/schemas/Record"
-      responses:
-        '200':
-          description: URI to download generated file
-          content:
-            text/plain:
-              schema:
-                type: string
-        '400':
-          description: Bad request
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/ApiError"
-        default:
-          description: An unexpected error
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/ApiError"
-  /api/record:
-    get:
-      description: Get list of invoice records
-      operationId: getAllRecords
-      tags:
-        - record
-      responses:
-        '200':
-          description: An expected response
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: "#/components/schemas/Record"
+                $ref: "#/components/schemas/Response"
         default:
           description: An unexpected error
           content:
