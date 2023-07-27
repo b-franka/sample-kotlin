@@ -5,7 +5,7 @@ RUN gradle build --no-daemon
 
 FROM openjdk:17-alpine
 
-EXPOSE 8080
+EXPOSE 8088
 
 RUN mkdir /app
 
